@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Testing</title>
+	
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="custom-lms.css" rel="stylesheet" type="text/css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<style>
+		a {color:#990000;}
+	</style>
+</head>
+
+<body>
+	<a class="accessibility-skip-primary-nav" href="#main">Skip Sitewide Header and Menu</a>
+	<header aria-label="Site Header" role="banner">
+		
+		<div class="logo-area col-md-1" style="background:#990000;">
+			<a href="https://google.com"><img src="https://www.ua.edu/img/svg/by-the-numbers-about-page-svg.svg" alt="Logo Name" class="img-responsive" /></a>
+		</div><!-- logo-area -->
+		
+		<nav aria-label="Site Navigation" role="navigation">
+			<ol>
+				<li>
+				  <a href="https://google.com/link1">About</a>
+				</li>
+				<li>
+				  <a href="https://google.com/link2">Welcome</a>
+				</li>
+				<li>
+				  <a href="https://google.com/link3">Our Story</a>
+				</li>
+				<li>
+				  <a href="https://google.com/link4">Contact</a>
+				</li>
+			</ol>
+		</nav>
+		
+		<!-- Search Area  -->
+		<div class="search-box">
+			<form role="search" action="/" method="get">
+				  <label for="header-search">
+						<span class="accessibility-hide-search-term">Search</span>
+				  </label>
+				  	<input type="text" id="header-search" />
+				  <button type="submit">
+						<span class="accessibility-hide-search-term">Submit Search</span>
+						<i class="fa fa-search"></i>
+				  </button>
+			</form>
+		</div><!-- search box -->
+	</header>
+	
+	<!-- section main can consist of lead image/lead image text/page title/breadcrumb navigation  -->
+	<section id="main" aria-label="Page Header">
+		<h1>Page Title - 100% Accessible Page Test</h1>
+		<nav aria-label="Breadcrumb Navigation" role="navigation">
+			<a class="accessibility-skip-breadcrumb" href="#body-content-1">Skip Breadcrumb Navigation</a> <!-- If a breadcrumb is present in the design, always give the chance to skip it. -->
+        	<ol>
+				<li>
+				  <a href="https://google.com/link5">About 1</a>
+				</li>
+				<li>
+				  <a href="https://google.com/link46">Welcome 2</a>
+				</li>
+				<li>
+				  <a href="https://google.com/link47">Our Story 3</a>
+				</li>
+				<li>
+				  <a href="https://google.com/link48">Contact 4</a>
+				</li>
+          	</ol>
+        </nav>
+	</section>
+	<!-- section body-content-1 can consist of page navigation/body content. All body sections should be headed up by an H2. -->
+	<section id="body-content-1" aria-label="Page Content Section 1">
+		<div class="row">
+			<div class="sidebar-menu col-md-2">
+				<a class="accessibility-skip-secondary-nav" href="#section-1">Skip Sidebar Navigation</a><!-- "Sidebar" or "Page Navigation". -->
+				<nav aria-label="Secondary Navigation" role="navigation"><!-- Sidebar or general page navigation. -->
+					<ol>
+						<li>
+						  <a href="https://google.com/link9">About 1</a>
+						</li>
+						<li>
+						  <a href="https://google.com/link10">Welcome 2</a>
+						</li>
+						<li>
+						  <a href="https://google.com/link41">Our Story 3</a>
+						</li>
+						<li>
+						  <a href="https://google.com/link42">Contact 4</a>
+						</li>
+					</ol>
+				</nav>
+			</div> <!-- sidebar-menu -->
+			<div class="content-area col-md-10">
+			<h2 id="section-1">Section 1</h2>
+				<p>Content</p>
+				<h3>Sub Section</h3>
+				<p>Content</p>
+				<img src="https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg" alt="Birds flying and splashing in a bird bath" class="img-responsive" style="max-width:500px;" />
+				<button>Button</button>
+			</div> <!-- content-area -->
+		</div><!-- row -->
+	</section>
+	<!-- section body-content-2 can consist of body content and such. All body sections from this point on should be headed up by an H2. -->
+	<section id="body-content-2" class="background-image-dark" aria-label="Page Content Section 2" style="background-image: url('https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg');"> <!-- When an image is used for decoration, spacing or other purpose that is not part of the meaningful content in the page then the image has no meaning and should be ignored by assistive technologies. Source: https://bit.ly/2ttsjMk -->
+		<h2>Section 2</h2>
+		<p>Content</p>
+		<div class="internal">
+		</div> <!-- internal -->
+	</section>
+	
+	<section id="body-content-3" class="background-image-light background-parallax" aria-label="Page Content Section 3" style="background-image: url('https://www.gettyimages.ie/gi-resources/images/Homepage/Hero/UK/CMS_Creative_164657191_Kingfisher.jpg');"> <!-- When an image is used for decoration, spacing or other purpose that is not part of the meaningful content in the page then the image has no meaning and should be ignored by assistive technologies. Source: https://bit.ly/2ttsjMk -->
+		<h2>Section 3</h2>
+		<p>Content</p>
+		<div class="row">
+			<div class="col-md-4">
+				<h3>Sub Section 1</h3>
+				<p>Content</p>
+			</div> <!-- col-md-4 -->
+			<div class="col-md-4">
+				<h3>Sub Section 2</h3>
+				<p>Content</p>
+			</div> <!-- col-md-4 -->
+			<div class="col-md-4">
+				<h3>Sub Section 3</h3>
+				<p>Content</p>
+			</div> <!-- col-md-4 -->
+		</div> <!-- row -->
+	</section>
+	<section id="body-content-4" class="background-video background-video-parallax" aria-label="Page Content Section 4" style="height:300px;">
+		<iframe id="bgvid" title="A background video, with no sound, playing the Where Lagends Are Made Ad" aria-hidden="true" class="mobile-hide" src="https://player.vimeo.com/video/301908112?api=1&muted=1&loop=1&autoplay=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+		<div id="col-md-5">
+			<h2>Video Text</h2>
+		</div>
+		<div id="video-pause-button" aria-hidden="true" class="mobile-hide">  
+            	<div id="pause-button">
+    				<a aria-label="Pause Button" tabindex="-1" class="btn" ><i class="fa fa-pause fa-fw"></i></a> <!-- must have tabindex -1 to ignore as vimeo will automatically pull up its own controls upon tabbing, thus this is redundant -->
+  				</div> <!-- pause-button -->
+            </div> <!-- video-pause-button -->
+            <div id="video-play-button" aria-hidden="true" class="mobile-hide">  
+            	<div id="play-button">
+    				<a aria-label="Play Button" tabindex="-1" class="btn" ><i class="fa fa-play fa-fw"></i></a> <!-- must have tabindex -1 to ignore as vimeo will automatically pull up its own controls upon tabbing, thus this is redundant -->
+  				</div> <!-- play-button -->
+            </div> <!-- video-play-button -->
+	</section>
+	
+	<footer aria-label="Footer">
+		<div class="row">
+			<div class="col-md-4">
+			</div> <!-- col-md-4 -->
+			<div class="col-md-4">
+			</div> <!-- col-md-4 -->
+			<div class="col-md-4">
+			</div> <!-- col-md-4 -->
+		</div> <!-- row -->
+	</footer>
+<script src="https://www.ua.edu/assets/js/froogaloop.js"></script>
+<script>
+	// Froogaloop orig js
+	// https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/froogaloop.js
+	
+	var iframe = document.getElementById('bgvid');
+	
+	// $f == Froogaloop
+	var player = $f(iframe);
+	
+	// bind events
+	var playButton = document.getElementById("play-button");
+	playButton.addEventListener("click", function() {
+	  player.api("play");
+	});
+	
+	var pauseButton = document.getElementById("pause-button");
+	pauseButton.addEventListener("click", function() {
+	  player.api("pause");
+	});
+</script>
+</body>
+</html>
